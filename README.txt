@@ -16,6 +16,8 @@ Gere les heures creuses et pleines
 Gere l'eclairage exterieur si il fait jour, eteins immediatement l'eclairage.
 + script_time_eclairage_ext.lua
 Eteins l'eclairage exterieur au bout de 10 min.
++ script_device_temperature_exterieur.lua
+Futur Script qui va notifier par sms les temperatures de la nuit (Max, Min et moyenne) et alerter si il y a eu du gel.
 
 # Repertoire Python
 Contient les scripts en Pÿthon suivant :
