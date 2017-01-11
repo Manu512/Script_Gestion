@@ -1,0 +1,63 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+**/*~
+**/*.bak
+**/*.sw[abcdefghijklmnop]
+buienradar_rain_example.pl
+download_update.sh
+restart_domoticz
+update_domoticz
+_domoticz_main              
+logrotate
+/templates/
+/lua_parsers/
+/logrotate/
+_domoticz_main.bat
+readme.txt
+
+/lua/JSON.lua
+/lua/script_time_demo.lua
+/lua/script_device_demo.lua
+
+/python/test_beacon.py
+/python/script_device_PIRsmarter.py
+/python/reloader.py
+/python/googlepubsub.py
+/python/domoticz.py
+/python/sondes.bak
