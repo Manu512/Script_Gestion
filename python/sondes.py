@@ -9,7 +9,7 @@ DOMO_IP = "127.0.0.1"
 DOMO_PORT = "8080"
 
 # Gestion sonde de temperatures
-TTRDEFAUT = "60" # Délai d'attente entre 2 iterations de mesure des sondes.
+TTRDEFAUT = "60" # Delai d'attente entre 2 iterations de mesure des sondes.
 TEMP_EXTERIEUR = "48"
 TEMP_SORTIE_VMC = "49"
 TEMP_SALON = "50"
@@ -33,9 +33,9 @@ if len(sys.argv) > 1:
    try:
       TTR = str(int(sys.argv[1]))
    except:
-      TTR = TTRDEFAUT # Délai d'attente entre 2 iterations de mesure des sondes.
+      TTR = TTRDEFAUT # Delai d'attente entre 2 iterations de mesure des sondes.
 else:
-    TTR = TTRDEFAUT # Délai d'attente entre 2 iterations de mesure des sondes.
+    TTR = TTRDEFAUT # Delai d'attente entre 2 iterations de mesure des sondes.
 
 # DS18B20.py
 # 2016-04-25
@@ -89,4 +89,5 @@ while True:
       except:
          pass
    #break
-   time.sleep(TTR)
+   time.sleep(float(TTR))
+
