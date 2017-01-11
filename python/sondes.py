@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+import sys
 import glob
 import time
 import requests
@@ -7,8 +7,9 @@ import requests
 # Domoticz server
 DOMO_IP = "127.0.0.1"
 DOMO_PORT = "8080"
-# Gestion sonde de temperatures
 
+# Gestion sonde de temperatures
+TTRDEFAUT = "60" # Délai d'attente entre 2 iterations de mesure des sondes.
 TEMP_EXTERIEUR = "48"
 TEMP_SORTIE_VMC = "49"
 TEMP_SALON = "50"
@@ -26,6 +27,15 @@ def maj_temp(IDX,t):
       r = requests.get(url, params=payload)
       #print(r.url)
    return
+
+# Gestion de la boucle en fonction de l'argument.
+if len(sys.argv) > 1:
+   try:
+      TTR = str(int(sys.argv[1]))
+   except:
+      TTR = TTRDEFAUT # Délai d'attente entre 2 iterations de mesure des sondes.
+else:
+    TTR = TTRDEFAUT # Délai d'attente entre 2 iterations de mesure des sondes.
 
 # DS18B20.py
 # 2016-04-25
@@ -79,4 +89,4 @@ while True:
       except:
          pass
    #break
-   time.sleep(30)
+   time.sleep(TTR)
