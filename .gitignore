@@ -36,6 +36,7 @@
 ehthumbs.db
 Thumbs.db
 
+include_passwd
 **/*~
 **/*.bak
 **/*.sw[abcdefghijklmnop]
