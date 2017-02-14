@@ -36,6 +36,7 @@
 ehthumbs.db
 Thumbs.db
 
+include_passwd
 **/*~
 **/*.bak
 **/*.sw[abcdefghijklmnop]
@@ -61,3 +62,5 @@ readme.txt
 /python/googlepubsub.py
 /python/domoticz.py
 /python/sondes.bak
+/python/free.py
+/python/free.pyc

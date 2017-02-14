@@ -23,4 +23,5 @@ Futur Script qui va notifier par sms les temperatures de la nuit (Max, Min et mo
 Contient les scripts en Pÿthon suivant :
 + sondes.py
 Script Python de recuperation de mes 9 sondes DS18B20
-
++ sonnettes2.py
+Script Python gestions des sonnettes/SMS et de l'eclairage exterieur.
